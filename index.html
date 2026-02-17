@@ -11,203 +11,154 @@
     <!-- header started  -->
 
      <!-- HEADER START -->
-<header class="uppercase text-[1.4rem] shadow-md sticky top-0 bg-white z-50">
+    <header class="uppercase text-[1.4rem] shadow-md sticky top-0 bg-white z-50">
 
-    <!-- Desktop Navbar -->
-    <nav class="hidden lg:flex items-center gap-20 justify-center py-3 font-semibold">
-        <div>
-            <img src="https://nowpdp.org.pk/assets/images/logo1.jpg" alt="Logo">
-        </div>
-
-        <div class="flex gap-10">
-            <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
-                <p>About Us</p>
-                <i class="fa-solid fa-angle-down ml-1"></i>
-            </div>
-
-            <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
-                <p>Our Pillars</p>
-                <i class="fa-solid fa-angle-down ml-1"></i>
-            </div>
-
-            <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
-                <p>Our Work</p>
-                <i class="fa-solid fa-angle-down ml-1"></i>
-            </div>
-
-            <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
-                <p>Our Support</p>
-                <i class="fa-solid fa-angle-down ml-1"></i>
-            </div>
-
-            <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
-                <p>Our Stories</p>
-                <i class="fa-solid fa-angle-down ml-1"></i>
-            </div>
-
-            <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
-                <p>Media & Advocacy</p>
-                <i class="fa-solid fa-angle-down ml-1"></i>
-            </div>
-
-            <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
-                <p>Careers</p>
-            </div>
-
-            <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
-                <p>Get Involved</p>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Mobile Navbar -->
-    <nav class="flex lg:hidden justify-between py-5 items-center px-6">
-        <div>
-            <img src="https://nowpdp.org.pk/assets/images/logo1.jpg" alt="Logo" class="w-[120px]">
-        </div>
-
-        <div id="openMenu"
-             class="text-[2rem] rounded-2xl shadow-md p-2 border border-gray-200 cursor-pointer text-gray-500">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
-
-</header>
-<!-- HEADER END -->
-
-
-<!-- Overlay -->
-<div id="mobileOverlay"
-     class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300 z-40 lg:hidden">
-</div>
-
-<!-- Mobile Side Drawer -->
-<div id="mobileMenu"
-     class="fixed top-0 right-0 h-full w-[75%] max-w-[350px] bg-white shadow-xl 
-            translate-x-full transition-transform duration-300 z-50 lg:hidden">
-
-    <!-- Drawer Header -->
-    <div class="flex justify-between items-center p-6 border-b">
-        <img src="https://nowpdp.org.pk/assets/images/logo1.jpg"
-             alt="Logo" class="w-[120px]">
-
-        <button id="closeMenu"
-                class="text-2xl text-gray-500 hover:text-black">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-    </div>
-
-    <!-- Menu Items -->
-    <div class="flex flex-col uppercase text-[1.4rem] font-semibold">
-
-        <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
-            About Us
-        </div>
-
-        <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
-            Our Pillars
-        </div>
-
-        <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
-            Our Work
-        </div>
-
-        <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
-            Our Support
-        </div>
-
-        <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
-            Our Stories
-        </div>
-
-        <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
-            Media & Advocacy
-        </div>
-
-        <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
-            Careers
-        </div>
-
-        <div class="px-6 py-4 hover:bg-gray-50 cursor-pointer">
-            Get Involved
-        </div>
-
-    </div>
-</div>
-
-
-<!-- JavaScript -->
-<script>
-    const openMenu = document.getElementById("openMenu");
-    const closeMenu = document.getElementById("closeMenu");
-    const mobileMenu = document.getElementById("mobileMenu");
-    const mobileOverlay = document.getElementById("mobileOverlay");
-
-    function openDrawer() {
-        mobileMenu.classList.remove("translate-x-full");
-        mobileOverlay.classList.remove("opacity-0", "invisible");
-    }
-
-    function closeDrawer() {
-        mobileMenu.classList.add("translate-x-full");
-        mobileOverlay.classList.add("opacity-0", "invisible");
-    }
-
-    openMenu.addEventListener("click", openDrawer);
-    closeMenu.addEventListener("click", closeDrawer);
-    mobileOverlay.addEventListener("click", closeDrawer);
-</script>
-   
-
-
-    <!-- <header class=" uppercase text-[1.4rem] shadow-md sticky top-0 bg-white z-50">
+        <!-- Desktop Navbar -->
         <nav class="hidden lg:flex items-center gap-20 justify-center py-3 font-semibold">
             <div>
                 <img src="https://nowpdp.org.pk/assets/images/logo1.jpg" alt="Logo">
             </div>
+
             <div class="flex gap-10">
                 <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
                     <p>About Us</p>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down ml-1"></i>
                 </div>
+
                 <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
                     <p>Our Pillars</p>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down ml-1"></i>
                 </div>
+
                 <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
                     <p>Our Work</p>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down ml-1"></i>
                 </div>
+
                 <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
                     <p>Our Support</p>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down ml-1"></i>
                 </div>
+
                 <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
                     <p>Our Stories</p>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down ml-1"></i>
                 </div>
+
                 <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
                     <p>Media & Advocacy</p>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down ml-1"></i>
                 </div>
+
                 <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
                     <p>Careers</p>
                 </div>
+
                 <div class="flex items-center cursor-pointer hover:border-b-2 hover:border-green-500 py-5">
                     <p>Get Involved</p>
                 </div>
             </div>
         </nav>
-        <nav class="flex lg:hidden justify-between py-5 items-center px-10">
+
+        <!-- Mobile Navbar -->
+        <nav class="flex lg:hidden justify-between py-5 items-center px-6">
             <div>
-                <img src="https://nowpdp.org.pk/assets/images/logo1.jpg" alt="Logo" class="w-[15vw] ">
+                <img src="https://nowpdp.org.pk/assets/images/logo1.jpg" alt="Logo" class="w-30">
             </div>
-            <div class="text-[2rem] rounded-2xl shadow-md p-2  border border-gray-200 cursor-pointer text-gray-500">
+
+            <div id="openMenu"
+                class="text-[2rem] rounded-2xl shadow-md p-2 border border-gray-200 cursor-pointer text-gray-500">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
-    </header> -->
+
+    </header>
+    <!-- HEADER END -->
+
+
+    <!-- Overlay -->
+    <div id="mobileOverlay"
+        class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300 z-40 lg:hidden">
+    </div>
+
+    <!-- Mobile Side Drawer -->
+    <div id="mobileMenu"
+        class="fixed top-0 right-0 h-full w-[75%] max-w-87.5 bg-white shadow-xl 
+                translate-x-full transition-transform duration-300 z-50 lg:hidden">
+
+        <!-- Drawer Header -->
+        <div class="flex justify-between items-center p-6 border-b">
+            <img src="https://nowpdp.org.pk/assets/images/logo1.jpg"
+                alt="Logo" class="w-30">
+
+            <button id="closeMenu"
+                    class="text-2xl text-gray-500 hover:text-black">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="flex flex-col uppercase text-[1.4rem] font-semibold">
+
+            <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
+                About Us
+            </div>
+
+            <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
+                Our Pillars
+            </div>
+
+            <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
+                Our Work
+            </div>
+
+            <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
+                Our Support
+            </div>
+
+            <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
+                Our Stories
+            </div>
+
+            <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
+                Media & Advocacy
+            </div>
+
+            <div class="px-6 py-4 border-b hover:bg-gray-50 cursor-pointer">
+                Careers
+            </div>
+
+            <div class="px-6 py-4 hover:bg-gray-50 cursor-pointer">
+                Get Involved
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const openMenu = document.getElementById("openMenu");
+        const closeMenu = document.getElementById("closeMenu");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const mobileOverlay = document.getElementById("mobileOverlay");
+
+        function openDrawer() {
+            mobileMenu.classList.remove("translate-x-full");
+            mobileOverlay.classList.remove("opacity-0", "invisible");
+        }
+
+        function closeDrawer() {
+            mobileMenu.classList.add("translate-x-full");
+            mobileOverlay.classList.add("opacity-0", "invisible");
+        }
+
+        openMenu.addEventListener("click", openDrawer);
+        closeMenu.addEventListener("click", closeDrawer);
+        mobileOverlay.addEventListener("click", closeDrawer);
+    </script>
+   
     <!-- header ended -->
+    
 
     <!-- main started  -->
      <main>    
